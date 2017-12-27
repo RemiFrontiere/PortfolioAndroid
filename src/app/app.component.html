@@ -4,9 +4,14 @@
 </mat-toolbar-row>
 
 <mat-toolbar-row>
-  <span>Contact</span>
-  <span>LinkedIn</span>
-  <span>Cv</span>
+  <span *ngIf="lang=='fr'">A Propos</span>
+  <span *ngIf="lang=='fr'">Contact</span>
+  <span *ngIf="lang=='fr'">LinkedIn</span>
+  <span *ngIf="lang=='fr'">Cv</span>
+  <span *ngIf="lang=='uk'">About</span>
+  <span *ngIf="lang=='uk'">Contact</span>
+  <span *ngIf="lang=='uk'">LinkedIn</span>
+  <span *ngIf="lang=='uk'">Cv</span>
   <button mat-button [matMenuTriggerFor]="appMenu"><mat-icon>menu</mat-icon>Langue</button>
 </mat-toolbar-row>
 
@@ -14,8 +19,8 @@
 </mat-toolbar>
 
 <mat-menu #appMenu="matMenu">
-  <button mat-menu-item> Français </button>
-  <button mat-menu-item> English </button>
+  <button mat-menu-item (click)="lang='fr'"> Français </button>
+  <button mat-menu-item (click)="lang='uk'"> English </button>
 </mat-menu>
 
 
