@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +9,8 @@ import { Http } from '@angular/http';
 })
 export class AppComponent {
   title = 'app';
-  showFiller = false;
+
+  showMenu = false;
   public selectedLang = 'fr';
   public langs = [
   {value: 'fr', viewValue: 'Français'},

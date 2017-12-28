@@ -1,0 +1,15 @@
+.myDash{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  text-align: justify;
+  top: 64px;
+  background-color: wheat;
+  z-index: 1;
+      overflow-y: auto;
+
+  p{
+    color: black;
+    margin: 90px;
+  }
+}

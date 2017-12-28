@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
 import { AppComponent } from './components/app/app.component';
-//import { AboutComponent } from './components/about/about.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
@@ -78,6 +78,7 @@ export class DemoMaterialModule {}
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardComponent
     //AboutComponent
   ],
   imports: [
@@ -86,6 +87,6 @@ export class DemoMaterialModule {}
     DemoMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DashboardComponent]
 })
 export class AppModule { }
