@@ -4,12 +4,24 @@
   width: 100%;
   text-align: justify;
   top: 64px;
-  background-color: wheat;
   z-index: 1;
-      overflow-y: auto;
+  overflow-y: auto;
+
+  .bgImgDiv{
+    text-align: center;
+    
+    .bgImg{
+      height: calc(100vh - 64px);
+    }
+    .bgBtn{
+      position: absolute;
+      top: calc((100vh - 64px)/2);
+    }
+  }
+
 
   p{
-    color: black;
+    color: white;
     margin: 90px;
   }
 }

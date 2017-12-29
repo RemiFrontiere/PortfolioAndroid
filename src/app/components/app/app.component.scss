@@ -11,6 +11,7 @@
     .titleHeader{
       width: 100%;
       text-align: center;
+      letter-spacing: 10px;
       font-size: 17px;
     }
 }
@@ -32,6 +33,7 @@
         height: 100%;
         background-color: #464444;
         opacity: 0.5;
+        cursor: crosshair;
     }
 
     .sidenav{
@@ -63,29 +65,37 @@
         border-bottom: 1px solid white;
         text-align: center;
 
-        button:hover{
-          background: rgba(0,0,0,0.3);
-          color: #c2185b;
-        }
+        // button:hover{
+        //   background: rgba(0,0,0,0.3);
+        //   color: #c2185b;
+        // }
       }
 
 
       .titleNav{
         margin: 0;
       }
-      .navList{
-        padding-top: 0;
+
+      .expansion{
+        .navList{
+          padding-top: 0;
 
 
 
-        a.mat-list-item{
-          font-size: 13px;
-          color: white;
-        }
+          a.mat-list-item{
+            font-size: 13px;
+            color: white;
+            font-weight: 500;
 
-        a.mat-list-item:hover{
-          background: rgba(0,0,0,0.3);
-          color: #c2185b;
+            .navIcon{
+              margin-right: 15px;
+            }
+          }
+
+          a.mat-list-item:hover{
+            background-color: rgba(0,0,0,0.12);
+            color: currentColor;
+          }
         }
       }
 
