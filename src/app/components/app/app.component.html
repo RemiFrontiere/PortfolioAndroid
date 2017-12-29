@@ -15,12 +15,12 @@
       </div>
       <div class="buttonHeader">
         <button type="button" mat-button *ngIf="selectedLang=='fr'">A Propos</button>
-        <button type="button" mat-button *ngIf="selectedLang=='fr'">Contact</button>
-        <button type="button" mat-button onclick="window.open('https://www.linkedin.com/in/r%C3%A9mi-frontiere-b88972143/','_blank')" >LinkedIn</button>
-        <button type="button" mat-button>Cv</button>
-        <button type="button" mat-button onclick="window.open('https://github.com/RemiFrontiere','_blank')">GitHub</button>
         <button type="button" mat-button *ngIf="selectedLang=='uk'">About</button>
-        <button type="button" mat-button *ngIf="selectedLang=='uk'">Contact</button>
+        <button type="button" mat-button>Contact</button>
+        <button type="button" mat-button onclick="window.open('https://www.linkedin.com/in/r%C3%A9mi-frontiere-b88972143/','_blank')" >LinkedIn</button>
+        <button type="button" mat-button onclick="window.open('src/assets/cv.pdf', '_blank'); return false;">Cv</button>
+        <button type="button" mat-button onclick="window.open('https://github.com/RemiFrontiere','_blank')">GitHub</button>
+
       </div>
       <mat-accordion>
         <mat-expansion-panel>
@@ -38,21 +38,6 @@
             <a mat-list-item routerLink=".">Appli KTD</a>
           </mat-nav-list>
         </mat-expansion-panel>
-        <!-- <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <h3 mat-subheader class="titleNav">Mon parcours</h3>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-nav-list class="navList">
-            <a mat-list-item routerLink=".">Logiciel Enregistrement Carte Grise</a>
-            <a mat-list-item routerLink=".">Allier Tests</a>
-            <a mat-list-item routerLink=".">DLL</a>
-            <a mat-list-item routerLink=".">Logiciel Facturation</a>
-            <a mat-list-item routerLink=".">Application mobile KumQuat</a>
-            <a mat-list-item routerLink=".">Appli KTD</a>
-          </mat-nav-list>
-        </mat-expansion-panel> -->
       </mat-accordion>
       <mat-form-field class="langDiv">
         <mat-select placeholder="Langue" [(value)]="selectedLang">
@@ -61,6 +46,9 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
+      <div class="bottom">
+
+      </div>
     </mat-sidenav>
     <div *ngIf="showMenu" class="grayFilter" (click)="drawer.toggle(); showMenu = !showMenu;"></div>
 </mat-sidenav-container>

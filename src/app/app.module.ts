@@ -76,17 +76,17 @@ import {
 export class DemoMaterialModule {}
 
 @NgModule({
-  declarations: [
+  declarations: [ // Composants
     AppComponent,
     DashboardComponent
     //AboutComponent
   ],
-  imports: [
+  imports: [ // Imports
     BrowserModule,
     BrowserAnimationsModule,
     DemoMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent, DashboardComponent]
+  bootstrap: [AppComponent, DashboardComponent] // Composants
 })
 export class AppModule { }
