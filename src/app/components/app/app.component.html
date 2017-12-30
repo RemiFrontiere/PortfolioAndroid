@@ -14,19 +14,21 @@
         <img class="smallImg" src="../../assets/pictureSmall.png" alt="">
       </div>
       <div class="buttonHeader">
-        <button type="button" mat-button *ngIf="selectedLang=='fr'">A Propos</button>
-        <button type="button" mat-button *ngIf="selectedLang=='uk'">About</button>
-        <button type="button" mat-button>Contact</button>
-        <button type="button" mat-button onclick="window.open('https://www.linkedin.com/in/r%C3%A9mi-frontiere-b88972143/','_blank')" >LinkedIn</button>
-        <button type="button" mat-button onclick="window.open('src/assets/cv.pdf', '_blank'); return false;">Cv</button>
-        <button type="button" mat-button onclick="window.open('https://github.com/RemiFrontiere','_blank')">GitHub</button>
+        <button class="sidenavBtn" type="button" mat-button *ngIf="selectedLang=='fr'">A Propos</button>
+        <button class="sidenavBtn" type="button" mat-button *ngIf="selectedLang=='uk'">About</button>
+        <button class="sidenavBtn" type="button" mat-button>Contact</button>
+        <button class="sidenavBtn" type="button" mat-button onclick="window.open('https://www.linkedin.com/in/r%C3%A9mi-frontiere-b88972143/','_blank')" >LinkedIn</button>
+        <button class="sidenavBtn" type="button" mat-button onclick="window.open('src/assets/cv.pdf', '_blank'); return false;">Cv</button>
+        <button class="sidenavBtn" type="button" mat-button onclick="window.open('https://github.com/RemiFrontiere','_blank')">GitHub</button>
 
       </div>
       <mat-accordion>
         <mat-expansion-panel class="expansion">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <h3 mat-subheader class="titleNav">Mes projets</h3>
+              <h4 mat-subheader class="titleNav" *ngIf="selectedLang=='fr'">Mes projets</h4>
+              <h4 mat-subheader class="titleNav" *ngIf="selectedLang=='uk'">My projects</h4>
+
             </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-nav-list class="navList">

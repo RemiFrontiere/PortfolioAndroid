@@ -1,4 +1,13 @@
+::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: #2e2e2e;
+}
 
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #c2185b;
+}
 
 .fixed-header {
     position: fixed;
@@ -40,8 +49,15 @@
       z-index: 2;
       background-color: #2e2e2e;
       color: white;
-      width: 250px;
+      width: 300px;
       overflow-y: auto;
+
+      .sidenavBtn{
+        font-size: 15px;
+        font-weight: 700;
+        height: 50px;
+        letter-spacing: 5px;
+      }
 
       .imageNav{
         display: flex;
@@ -51,12 +67,14 @@
         img.smallImg{
           height: 100px;
           border-radius: 100%;
+          margin: 20px;
         }
       }
       mat-expansion-panel{
         background: #2e2e2e;
 
-        h3{
+        h4{
+          letter-spacing: 5px;
           color: white;
         }
       }
@@ -86,7 +104,7 @@
             font-size: 13px;
             color: white;
             font-weight: 500;
-
+            letter-spacing: 2px;
             .navIcon{
               margin-right: 15px;
             }
@@ -102,7 +120,8 @@
       .mat-form-field.langDiv{
         border-top: 1px solid white;
         padding: 10px 16px;
-        width: 230px;
+        letter-spacing: 5px;
+        width: 300px;
       }
     }
 

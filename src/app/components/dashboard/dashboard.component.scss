@@ -9,9 +9,10 @@
 
   .bgImgDiv{
     text-align: center;
-    
+
     .bgImg{
       height: calc(100vh - 64px);
+      width: 100%;
     }
     .bgBtn{
       position: absolute;

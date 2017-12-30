@@ -3,10 +3,40 @@
 body{
   background:#2e2e2e;
   height: 100vh;
-   overflow-y: hidden; 
+  overflow-y: hidden;
   margin: 0;
 }
 
 .mat-expansion-panel-content .mat-expansion-panel-body {
     padding: 0px 5px 16px;
 }
+
+  @keyframes dots {
+    50% {
+      transform: translateY(-.4rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .d {
+    animation: dots 1.5s ease-out infinite;
+  }
+  .d-2 {
+    animation-delay: .5s;
+  }
+  .d-3 {
+    animation-delay: 1s;
+  }
+
+  ::-webkit-scrollbar {
+    border-radius: 10px;
+    background-color: #2e2e2e;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+  	border-radius: 10px;
+  	background-color: #c2185b;
+  }
