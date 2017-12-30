@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Http } from '@angular/http';
 
 
@@ -8,6 +8,7 @@ import { Http } from '@angular/http';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'app';
   showMenu = false;
   public selectedLang = 'fr';
@@ -15,4 +16,7 @@ export class AppComponent {
     {value: 'fr', viewValue: 'Français'},
     {value: 'uk', viewValue: 'English'}
   ];
+
+  ngOnChanges(){
+  }
 }

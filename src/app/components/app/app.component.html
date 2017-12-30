@@ -1,7 +1,7 @@
 <mat-toolbar color="primary" class="fixed-header">
   <mat-toolbar-row>
     <button type="button" mat-icon-button (click)="showMenu = !showMenu; drawer.toggle(); ">
-      <mat-icon class="mat-icon material-icons" role="img" >menu</mat-icon>
+      <mat-icon class="mat-icon material-icons" role="img" *ngIf="!showMenu">menu</mat-icon>
     </button>
     <div class="titleHeader">
       <span>Remi Frontiere</span>
@@ -10,11 +10,14 @@
 </mat-toolbar>
 <mat-sidenav-container class="body" autosize [ngClass]="{show: showMenu}" >
     <mat-sidenav #drawer class="sidenav" mode="side" cdkscrollable>
+      <button class="sidenavBtnIcon" type="button" mat-icon-button (click)="showMenu = !showMenu; drawer.toggle(); ">
+        <mat-icon class="mat-icon material-icons" role="img" *ngIf="showMenu">close</mat-icon>
+      </button>
       <div class="imageNav">
         <img class="smallImg" src="../../assets/pictureSmall.png" alt="">
       </div>
       <div class="buttonHeader">
-        <button class="sidenavBtn" type="button" mat-button *ngIf="selectedLang=='fr'">A Propos</button>
+        <a class="sidenavBtn" type="button" mat-button href="#about" *ngIf="selectedLang=='fr'">A Propos</a>
         <button class="sidenavBtn" type="button" mat-button *ngIf="selectedLang=='uk'">About</button>
         <button class="sidenavBtn" type="button" mat-button>Contact</button>
         <button class="sidenavBtn" type="button" mat-button onclick="window.open('https://www.linkedin.com/in/r%C3%A9mi-frontiere-b88972143/','_blank')" >LinkedIn</button>
@@ -53,4 +56,4 @@
     </mat-sidenav>
     <div *ngIf="showMenu" class="grayFilter" (click)="drawer.toggle(); showMenu = !showMenu;"></div>
 </mat-sidenav-container>
-<dashboard-component></dashboard-component>
+<dashboard-component [lang]="selectedLang"></dashboard-component>

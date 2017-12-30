@@ -6,6 +6,7 @@
   top: 64px;
   z-index: 1;
   overflow-y: auto;
+  letter-spacing: 5px;
 
   .bgImgDiv{
     text-align: center;
@@ -20,7 +21,16 @@
     }
   }
 
+  #about{
+    padding: 5%;
+    .aboutCard{
+      padding: 0;
 
+      .contentCard{
+        padding: 24px;
+      }
+    }
+  }
   p{
     color: white;
     margin: 90px;
