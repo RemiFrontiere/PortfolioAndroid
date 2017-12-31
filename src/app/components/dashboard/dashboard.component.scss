@@ -1,6 +1,7 @@
 .myDash{
   height: 100%;
   position: absolute;
+  cursor: default;
   width: 100%;
   text-align: justify;
   top: 64px;
@@ -21,13 +22,19 @@
     }
   }
 
-  #about{
+  .card{
     padding: 5%;
-    .aboutCard{
+    .divCard{
       padding: 0;
 
       .contentCard{
         padding: 24px;
+      }
+      .contentCardComp{
+        padding: 24px;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
       }
     }
   }

@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule} from '@angular/core';
 import { AppComponent } from './components/app/app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AboutComponent } from './components/about/about.component';
+import { DiplomeComponent } from './components/diplome/diplome.component';
+import { CompetenceComponent } from './components/competence/competence.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
@@ -80,8 +83,10 @@ export class DemoMaterialModule {}
 @NgModule({
   declarations: [ // Composants
     AppComponent,
-    DashboardComponent
-    //AboutComponent
+    DashboardComponent,
+    AboutComponent,
+    DiplomeComponent,
+    CompetenceComponent
   ],
   imports: [ // Imports
     BrowserModule,
@@ -89,6 +94,11 @@ export class DemoMaterialModule {}
     DemoMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent, DashboardComponent] // Composants
+  bootstrap: [
+    AppComponent,
+    DashboardComponent,
+    AboutComponent,
+    DiplomeComponent,
+    CompetenceComponent] // Composants
 })
 export class AppModule { }

@@ -1,0 +1,40 @@
+.aboutDiv{
+  display: flex;
+  .divImg{
+    width: 20%;
+    height: 20%;
+    .smallImg{
+      border-radius: 100%;
+      height: 90%;
+      width: 90%;
+      margin-right: 20px;
+    }
+  }
+  .textAbout{
+    width: 100%;
+
+    .toolTip{
+      color: #c2185b;
+      cursor: help;
+      font-weight: bold;
+    }
+  }
+}
+
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .aboutDiv{
+    display: inherit;
+    .divImg{
+      text-align: center;
+      width: 100%;
+      .smallImg{
+        height: 150px;
+        width: 150px;
+      }
+    }
+    .textAbout{
+      width: 100%;
+    }
+  }
+}
