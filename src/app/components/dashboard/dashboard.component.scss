@@ -27,13 +27,29 @@
     .divCard{
       padding: 0;
 
+      .chip1{
+        background-color: gray;
+        cursor: pointer;
+      }
+      .chip2{
+        background-color: #297200;
+        cursor: pointer;
+      }
+      .chip3{
+        background-color: blue;
+        cursor: pointer;
+      }
+
+      .title{
+        margin-left: 20px;
+      }
       .contentCard{
         padding: 24px;
       }
       .contentCardComp{
         padding: 24px;
         display:flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap: wrap;
       }
     }

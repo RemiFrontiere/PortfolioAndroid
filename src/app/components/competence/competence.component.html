@@ -1,3 +1,9 @@
-<div class="comp" *ngIf="item" [style.background-color]="item.color">
-<p>{{ item.id }}</p>
+<div class="comp" *ngIf="(item && selectedChip==item.type) || (item && selectedChip=='Tout')" [style.background-color]="item.color">
+  <div class="fLign">
+    <img class="icon" *ngIf="item.icon" src="../../../assets/{{item.icon}}" alt="">
+    <p>{{ item.id }}</p>
+  </div>
+  <div class="sLign">
+    <mat-progress-bar color="warn" class="progress" mode="determinate" [value]="item.lvl"></mat-progress-bar>
+  </div>
 </div>
