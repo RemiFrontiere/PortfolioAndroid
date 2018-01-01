@@ -1,12 +1,12 @@
 <div class="myDash">
   <div class="bgImgDiv">
     <img class="bgImg" src="../../assets/background.jpeg" alt="">
-    <a mat-fab color="primary" class="bgBtn" ><i class="material-icons">keyboard_arrow_down</i></a>
+    <a mat-fab color="primary" class="bgBtn primaryColor" ><i class="material-icons">keyboard_arrow_down</i></a>
   </div>
   <div id="about" class="card">
     <mat-card class="divCard">
       <mat-toolbar>
-        <mat-icon class="mat-icon material-icons" role="img" color="primary">info</mat-icon>
+        <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
         <p  class="title">A propos</p>
         <p *ngIf="selectedLang=='uk'">About</p>
       </mat-toolbar>
@@ -18,7 +18,7 @@
   <div id="diplome" class="card">
     <mat-card class="divCard">
       <mat-toolbar>
-        <mat-icon class="mat-icon material-icons" role="img" color="primary">info</mat-icon>
+        <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
         <p class="title">Mes diplômes</p>
       </mat-toolbar>
       <div class="contentCard">
@@ -30,7 +30,7 @@
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-toolbar-row>
-          <mat-icon class="mat-icon material-icons" role="img" color="primary">info</mat-icon>
+          <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
           <p class="title">Mes compétences</p>
         </mat-toolbar-row>
         <mat-toolbar-row>
@@ -44,6 +44,18 @@
       <div class="contentCardComp">
         <competence-component *ngFor="let competence of competences" [selectedChip]="selectedChip" [item]="competence"></competence-component>
       </div>
+    </mat-card>
+  </div>
+  <div id="etudes" class="card">
+    <mat-card class="divCard">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
+          <p class="title"></p>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+        </mat-toolbar-row>
+      </mat-toolbar>
     </mat-card>
   </div>
 </div>

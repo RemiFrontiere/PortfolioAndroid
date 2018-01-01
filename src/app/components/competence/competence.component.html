@@ -1,4 +1,4 @@
-<div class="comp" *ngIf="(item && selectedChip==item.type) || (item && selectedChip=='Tout')" [style.background-color]="item.color">
+<div class="comp" *ngIf="(item && selectedChip==item.type) || (item && selectedChip=='Tout')">
   <div class="fLign">
     <img class="icon" *ngIf="item.icon" src="../../../assets/{{item.icon}}" alt="">
     <p>{{ item.id }}</p>

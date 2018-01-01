@@ -7,7 +7,7 @@
 ::-webkit-scrollbar-thumb
 {
   border-radius: 10px;
-  background-color: #c2185b;
+  background-color: #1976d2;
 }
 
 .fixed-header {
@@ -33,7 +33,7 @@
 
 .body {
     height: 100%;
-    // margin-top: 64px;
+    margin-top: 64px;
     width: 0%;
     background: none;
     z-index: 2;
@@ -65,6 +65,10 @@
         font-weight: 700;
         height: 50px;
         letter-spacing: 5px;
+
+        .icon{
+          height: 20px;
+        }
       }
 
       .imageNav{
@@ -130,6 +134,10 @@
         padding: 10px 16px;
         letter-spacing: 5px;
         width: 300px;
+
+        .option{
+          color: #1976d2;
+        }
       }
     }
 

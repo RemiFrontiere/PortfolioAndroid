@@ -20,7 +20,9 @@
         <a class="sidenavBtn" type="button" mat-button href="#about" *ngIf="selectedLang=='fr'">A Propos</a>
         <button class="sidenavBtn" type="button" mat-button *ngIf="selectedLang=='uk'">About</button>
         <button class="sidenavBtn" type="button" mat-button>Contact</button>
-        <button class="sidenavBtn" type="button" mat-button onclick="window.open('https://www.linkedin.com/in/r%C3%A9mi-frontiere-b88972143/','_blank')" >LinkedIn</button>
+        <button class="sidenavBtn" type="button" mat-button onclick="window.open('https://www.linkedin.com/in/r%C3%A9mi-frontiere-b88972143/','_blank')" >
+          Linked<img class="icon" src="../../../assets/linkedin.png" alt="">
+        </button>
         <button class="sidenavBtn" type="button" mat-button onclick="window.open('src/assets/cv.pdf', '_blank'); return false;">Cv</button>
         <button class="sidenavBtn" type="button" mat-button onclick="window.open('https://github.com/RemiFrontiere','_blank')">GitHub</button>
 
@@ -45,7 +47,7 @@
       </mat-accordion>
       <mat-form-field class="langDiv">
         <mat-select placeholder="Langue" [(value)]="selectedLang">
-          <mat-option *ngFor="let lang of langs" [value]="lang.value" (click)="selectedLang = lang.value">
+          <mat-option class="option" *ngFor="let lang of langs" [value]="lang.value" (click)="selectedLang = lang.value">
             {{ lang.viewValue }}
           </mat-option>
         </mat-select>

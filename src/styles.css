@@ -1,8 +1,6 @@
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
 
-@myColor = red;
-
 body{
   background:#2e2e2e;
   height: 100vh;
@@ -41,5 +39,23 @@ body{
   ::-webkit-scrollbar-thumb
   {
   	border-radius: 10px;
-  	background-color: #c2185b;
+  	background-color: #1976d2;
   }
+
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: #1976d2;
+}
+.mat-focused .mat-form-field-label {
+  color: #1976d2;
+}
+.mat-form-field-ripple {
+  background-color: #1976d2;
+}
+
+.mat-progress-bar.mat-warn .mat-progress-bar-buffer {
+    background-color: #2d2d2d;
+}
+.mat-progress-bar.mat-warn .mat-progress-bar-fill::after {
+    background-color: #1976d2;
+}
