@@ -1,20 +1,37 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 import { Http } from '@angular/http';
+import { Project } from '../../project';
 
 @Component({
   selector: 'dashboard-component',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit{
   @Input('lang') selectedLang: string;
 
-  public selectedChip = "Tout";
+  public myProjects : Array<Project>;
+
+   constructor(private http: HttpClient) {
+     this.http.get('../../../assets/JSON/projects.json').subscribe(data => {
+       // Read the result field from the JSON response.
+
+       for (let i of data['projects']) {
+         let v = new Project(i["id"], i["name"], i["language"]);
+         console.log("JSOsqsqsqN",v);
+         this.myProjects.push(v);
+       }
+       console.log("JSON",this.myProjects);
+     });
+     }
+   ngOnInit() {
+  }
+  ngOnChanges() {
+    console.log(this.selectedProject);
+  }
 
 
-  public chip1 = 'Tout';
-  public chip2 = 'Web';
-  public chip3 = 'Mobile';
 
 
 
@@ -84,7 +101,7 @@ export class DashboardComponent {
       "color": "#297200",
       "type":"Web",
       "icon":"",
-      "lvl":"60"
+      "lvl":"55"
     },
     {
       "id": "UML",
@@ -99,21 +116,101 @@ export class DashboardComponent {
       "type":"Mobile",
       "icon":"",
       "lvl":"20"
-    }
-];
+    }];
+  public diplomes = [
+    {
+      "id": "dd",
+      "color": ""
+    },
+    {
+      "id": "Bac Professionnel Technicien Menuisier Agenceur",
+      "total": "",
+      "ville":"Vichy [03]",
+      "univ":"ddddefefefefe",
+      "alternance":"true",
+      "date":"2013"
+    },
+    {
+      "id": "Bac Technologique STI2D opt. SIN",
+      "total": "Bac Technologique Sciences et Technologies de l'Industrie et du Développement Durable option Système d’Information et Numérique",
+      "ville":"Digoin [71]",
+      "univ": "Cité Scolaire Camille Claudel",
+      "alternance":"",
+      "date":"2015"
+    },
+    {
+      "id": "BTS SIO opt. SLAM",
+      "total": "BTS Service Informatique aux Organisations option Solutions Logicielles et Applications Métiers",
+      "ville":"Vichy [03]",
+      "univ": "",
+      "alternance":"",
+      "date":"2017"
+    },
+    {
+      "id": "Licence Professionnel DIM",
+      "total": "Licence Professionnel Développeur Informatique Multisupport",
+      "ville":"Annecy [74]",
+      "univ": "",
+      "alternance":"true",
+      "date":"En cours"
+    },
+  ];
+  public projets = [
+    {
+      "id": "dd"
+    },
+    {
+      "id": "0",
+      "name": "Portfolio Remi Frontiere",
+      "ville":"Angular 5 - Typescript",
+    },
+    {
+      "id": "1",
+      "name": "Logiciel Enregistrement Carte Grise",
+      "ville":"C#",
+    },
+    {
+      "id": "2",
+      "name": "Allier Tests",
+      "ville":"C#",
+    },
+    {
+      "id": "3",
+      "name": "DLL",
+      "ville":"C#",
+    },
+    {
+      "id": "4",
+      "name": "Logiciel Facturation",
+      "ville":"C#",
+    },
+    {
+      "id": "5",
+      "name": "Application mobile KumQuat",
+      "ville":"Android Studio",
+    },
+  ];
 
-  constructor() {
-    }
+  public selectedChip = "Tout";
+  public selectedProject = this.projets[1];
+  public selectedProjectID = 1;
 
-    ngOnChanges() {
-      console.log("LANG1:"+this.selectedLang+"ddddddd");
-    }
-
-    ngOnInit() {
-
-    }
+  public chip1 = 'Tout';
+  public chip2 = 'Web';
+  public chip3 = 'Mobile';
 
 
-  title = 'dashboard';
+  public getJson(){
 
+    // http.get('/your.json').subscribe(data => {
+    //   this.results = data;
+    // });
+  }
+
+  public nextProject(){
+    console.log("AV",this.selectedProject);
+    this.selectedProject = this.projets[this.selectedProjectID+1];
+    this.selectedProjectID++;
+    console.log("AP",this.selectedProject);
+  }
 }

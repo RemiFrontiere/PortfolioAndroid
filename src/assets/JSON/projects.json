@@ -1,0 +1,34 @@
+{
+    "projects":[
+    {
+      "id": "0",
+      "name": "Portfolio Remi Frontiere",
+      "language":"Angular 5 - Typescript"
+    },
+    {
+      "id": "1",
+      "name": "Logiciel Enregistrement Carte Grise",
+      "language":"C#"
+    },
+    {
+      "id": "2",
+      "name": "Allier Tests",
+      "language":"C#"
+    },
+    {
+      "id": "3",
+      "name": "DLL",
+      "language":"C#"
+    },
+    {
+      "id": "4",
+      "name": "Logiciel Facturation",
+      "language":"C#"
+    },
+    {
+      "id": "5",
+      "name": "Application mobile KumQuat",
+      "language":"Android Studio"
+    }
+  ]
+}

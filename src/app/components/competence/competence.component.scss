@@ -4,6 +4,8 @@
   background-color: #2d2d2d;
   margin: 15px;
   border-radius: 15px 15px 0 0;
+  transform: scale(0);
+  animation: growHeight 0.5s ease forwards;
 
 
   .fLign{
@@ -29,7 +31,13 @@
   .progress {
 
   }
+}
 
 
-
+@keyframes growHeight {
+  to {
+    max-height: 50px;
+    opacity: 1;
+    transform: scale(1);
+  }
 }

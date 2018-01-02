@@ -1,7 +1,7 @@
 <div class="myDash">
   <div class="bgImgDiv">
     <img class="bgImg" src="../../assets/background.jpeg" alt="">
-    <a mat-fab color="primary" class="bgBtn primaryColor" ><i class="material-icons">keyboard_arrow_down</i></a>
+    <a mat-fab color="primary" class="bgBtn primaryColor" (click)="scrollElement()"><i class="material-icons">keyboard_arrow_down</i></a>
   </div>
   <div id="about" class="card">
     <mat-card class="divCard">
@@ -21,8 +21,8 @@
         <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
         <p class="title">Mes diplômes</p>
       </mat-toolbar>
-      <div class="contentCard">
-        <diplome-component></diplome-component>
+      <div class="contentCardDip">
+        <diplome-component *ngFor="let diplome of diplomes" [item]="diplome"></diplome-component>
       </div>
     </mat-card>
   </div>
@@ -46,16 +46,23 @@
       </div>
     </mat-card>
   </div>
-  <div id="etudes" class="card">
+  <div id="projet" class="card">
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-toolbar-row>
           <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-          <p class="title"></p>
+          <p class="title">Mes projets</p>
         </mat-toolbar-row>
-        <mat-toolbar-row>
-        </mat-toolbar-row>
+        <!-- <mat-toolbar-row>
+        </mat-toolbar-row> -->
       </mat-toolbar>
+      <div class="contentCardProj">
+        <projet-component [item]="selectedProject"></projet-component>
+        <div class="iconNext">
+          <a mat-fab color="primary" class="bgBtn primaryColor" (click)="nextProject()"><i class="material-icons">keyboard_arrow_right</i></a>
+        </div>
+      </div>
     </mat-card>
   </div>
+  <div class="bottom"></div>
 </div>

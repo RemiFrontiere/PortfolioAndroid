@@ -3,7 +3,7 @@
   position: absolute;
   cursor: default;
   width: 100%;
-  text-align: justify;
+  // text-align: i;
   top: 64px;
   z-index: 1;
   overflow-y: auto;
@@ -44,6 +44,19 @@
         cursor: pointer;
       }
 
+      .chip1:hover{
+        transform: rotate(360deg);
+        transition: all 0.2s ease-in-out;
+      }
+      .chip2:hover{
+        transform: rotate(360deg);
+        transition: all 0.2s ease-in-out;
+      }
+      .chip3:hover{
+        transform: rotate(360deg);
+        transition: all 0.2s ease-in-out;
+      }
+
       .title{
         margin-left: 20px;
       }
@@ -55,6 +68,46 @@
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
+
+        competence-component:hover{
+          transition: all 0.3s ease-in-out;
+          transform: scale(1.15);
+          cursor: pointer;
+        }
+      }
+      .contentCardDip{
+        padding: 24px;
+        justify-content: center;
+
+        competence-component:hover{
+          transition: all 0.3s ease-in-out;
+          transform: scale(1.15);
+          cursor: pointer;
+        }
+      }
+       .contentCardProj{
+          padding: 24px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+
+          .iconNext{
+            width: 5%;
+            height: 100%;
+
+          }
+
+
+          projet-component{
+            background-color: #2e2e2e;
+            height: 100%;
+            width: 90%;
+          }
+        }
+      .contentCardDip{
+        diplome-component:hover{
+          cursor: pointer;
+        }
       }
     }
   }
@@ -62,4 +115,9 @@
     color: white;
     margin: 90px;
   }
+}
+
+.bottom{
+  height: 100px;
+  width: 100%;
 }

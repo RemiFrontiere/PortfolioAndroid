@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
 export class CompetenceComponent {
 @Input('item') item: string;
 @Input('selectedChip') selectedChip: string;
-public color = 'red';
 
 ngOnChanges() {
 }
