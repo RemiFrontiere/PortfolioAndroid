@@ -3,32 +3,151 @@
     {
       "id": "0",
       "name": "Portfolio Remi Frontiere",
-      "language":"Angular 5 - Typescript"
+      "language":"Angular 5 - Typescript",
+      "topimg":"portfolio.png",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J' ai développé mon portfolio à l' aide d' Angular 5 car j' avais besoin et envie d' apprendre ce framework. De plus, le Typescript qui est disponible depuis Angular 2 me convient plus que le Javascript sachant que j' ai essentiellement développé en C# durant mon BTS SIO."
+        },
+        {
+          "type":"text",
+          "text":"Je m' appuie sur les material angular de Google pour certains composants (Toolbar, Icon, Button ...)"
+        },
+        {
+          "type":"link",
+          "text":"https://material.angular.io/",
+          "textLink":"Material angular"
+        },
+        {
+          "type":"img",
+          "text":"portfolio01.png"
+        },
+        {
+          "type":"text",
+          "text":""
+        }
+      ]
     },
     {
       "id": "1",
       "name": "Logiciel Enregistrement Carte Grise",
-      "language":"C#"
+      "language":"C#",
+      "topimg":"",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        }
+      ]
     },
     {
       "id": "2",
       "name": "Allier Tests",
-      "language":"C#"
+      "language":"C#",
+      "topimg":"",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        }
+      ]
     },
     {
       "id": "3",
       "name": "DLL",
-      "language":"C#"
+      "language":"C#",
+      "topimg":"Project/dll.png",
+      "texts":[
+        {
+          "type":"text",
+          "text":"L’objectif de ce projet était de créer puis ensuite d’utiliser une DLL. Cette DLL écrite en C# devait utiliser les procédures stockés d’une base de données. La deuxième phase du projet était de créer une classe de test C# pour utiliser cette DLL. J’ai donc créer une solution Windows Forms."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        }
+      ]
     },
     {
       "id": "4",
       "name": "Logiciel Facturation",
-      "language":"C#"
+      "language":"C#",
+      "topimg":"",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        }
+      ]
     },
     {
       "id": "5",
       "name": "Application mobile KumQuat",
-      "language":"Android Studio"
+      "language":"Android Studio",
+      "topimg":"",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        }
+      ]
     }
   ]
 }

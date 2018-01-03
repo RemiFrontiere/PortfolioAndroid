@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit{
   public getJson(){
     this.http.get('../../../assets/JSON/projects.json').subscribe(data => {
       for (let i of data['projects']) {
-        this.myProjects.push(new Project(i["id"], i["name"], i["language"]));
+        this.myProjects.push(new Project(i["id"], i["name"], i["language"], i["topimg"], i["texts"]));
       }
       this.selectedProject = this.myProjects[0];
     });
