@@ -1,0 +1,32 @@
+{
+    "diplomes":[
+        {
+          "id": "Bac Professionnel Technicien Menuisier Agenceur",
+          "total": "",
+          "ville":"Vichy [03]",
+          "alternance":"true",
+          "date":"2013"
+        },
+        {
+          "id": "Bac Technologique STI2D opt. SIN",
+          "total": "Bac Technologique Sciences et Technologies de l'Industrie et du Développement Durable option Système d’Information et Numérique",
+          "ville":"Digoin [71]",
+          "alternance":"",
+          "date":"2015"
+        },
+        {
+          "id": "BTS SIO opt. SLAM",
+          "total": "BTS Service Informatique aux Organisations option Solutions Logicielles et Applications Métiers",
+          "ville":"Vichy [03]",
+          "alternance":"",
+          "date":"2017"
+        },
+        {
+          "id": "Licence Professionnel DIM",
+          "total": "Licence Professionnel Développeur Informatique Multisupport",
+          "ville":"Annecy [74]",
+          "alternance":"true",
+          "date":"En cours"
+        }
+      ]
+  }

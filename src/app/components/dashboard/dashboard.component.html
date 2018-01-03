@@ -7,8 +7,8 @@
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-        <p  class="title">A propos</p>
-        <p *ngIf="selectedLang=='uk'">About</p>
+        <p *ngIf="selectedLang=='fr'" class="title">A propos</p>
+        <p *ngIf="selectedLang=='uk'" class="title">About</p>
       </mat-toolbar>
       <div class="contentCard">
         <about-component></about-component>
@@ -19,10 +19,11 @@
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-        <p class="title">Mes diplômes</p>
+        <p *ngIf="selectedLang=='fr'" class="title">Mes diplômes</p>
+        <p *ngIf="selectedLang=='uk'" class="title">My qualifications</p>
       </mat-toolbar>
       <div class="contentCardDip">
-        <diplome-component *ngFor="let diplome of diplomes" [item]="diplome"></diplome-component>
+        <diplome-component *ngFor="let diplome of myDiplomes" [item]="diplome"></diplome-component>
       </div>
     </mat-card>
   </div>
@@ -31,7 +32,8 @@
       <mat-toolbar>
         <mat-toolbar-row>
           <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-          <p class="title">Mes compétences</p>
+          <p *ngIf="selectedLang=='fr'" class="title">Mes compétences</p>
+          <p *ngIf="selectedLang=='uk'" class="title">My skills</p>
         </mat-toolbar-row>
         <mat-toolbar-row>
           <mat-chip-list>
@@ -42,7 +44,7 @@
         </mat-toolbar-row>
       </mat-toolbar>
       <div class="contentCardComp">
-        <competence-component *ngFor="let competence of competences" [selectedChip]="selectedChip" [item]="competence"></competence-component>
+        <competence-component *ngFor="let competence of myCompetences" [selectedChip]="selectedChip" [item]="competence"></competence-component>
       </div>
     </mat-card>
   </div>
@@ -51,7 +53,8 @@
       <mat-toolbar>
         <mat-toolbar-row>
           <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-          <p class="title">Mes projets</p>
+          <p *ngIf="selectedLang=='fr'" class="title">Mes projets</p>
+          <p *ngIf="selectedLang=='uk'" class="title">My projects</p>
         </mat-toolbar-row>
         <!-- <mat-toolbar-row>
         </mat-toolbar-row> -->

@@ -1,6 +1,10 @@
-<div class="projet">
-  <p class="title"></p>
-  <div class="titleImg">
-    <img src="../../../assets/portfolio.png" alt="">
+<div class="projet" *ngIf="item">
+  <mat-toolbar>
+    <p class="title">{{ item.Name }}</p>
+  </mat-toolbar>
+  <div class="content">
+    <div class="titleImg">
+      <img src="../../../assets/portfolio.png" alt="">
+    </div>
   </div>
 </div>

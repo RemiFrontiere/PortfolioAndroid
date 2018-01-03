@@ -1,0 +1,70 @@
+{
+    "competences":[
+      {
+        "id": "C#",
+        "type":"",
+        "icon":"",
+        "lvl":"35"
+      },
+      {
+        "id": "Android Studio",
+        "type":"Mobile",
+        "icon":"android.png",
+        "lvl":"20"
+      },
+      {
+        "id": "Javascript",
+        "type":"Web",
+        "icon":"js.png",
+        "lvl":"20"
+      },
+      {
+        "id": "Typescript",
+        "type":"Web",
+        "icon":"ts.png",
+        "lvl":"40"
+      },
+      {
+        "id": "Angular",
+        "type":"Web",
+        "icon":"angular.ico",
+        "lvl":"40"
+      },
+      {
+        "id": "VueJs",
+        "type":"Web",
+        "icon":"vue.png",
+        "lvl":"20"
+      },
+      {
+        "id": "Git",
+        "type":"Versionning",
+        "icon":"git.png",
+        "lvl":"60"
+      },
+      {
+        "id": "HTML/Pug",
+        "type":"Web",
+        "icon":"html.png",
+        "lvl":"50"
+      },
+      {
+        "id": "Css/Scss/Less",
+        "type":"Web",
+        "icon":"",
+        "lvl":"55"
+      },
+      {
+        "id": "UML",
+        "type":"",
+        "icon":"",
+        "lvl":"20"
+      },
+      {
+        "id": "Windows Phone",
+        "type":"Mobile",
+        "icon":"",
+        "lvl":"20"
+      }
+    ]
+  }

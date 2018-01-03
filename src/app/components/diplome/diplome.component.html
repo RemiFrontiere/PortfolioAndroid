@@ -1,12 +1,12 @@
 <div class="dip" *ngIf="(item)">
   <div class="date">
-    {{item.date}}
+    {{item.Date}}
   </div>
   <div class="fLign">
-      <p [matTooltip]="item.total" class="toolTip">{{ item.id }}</p>
+      <p [matTooltip]="item.Total" class="toolTip">{{ item.Id }}</p>
       <div class="divSLign">
-        <p class="slign">{{ item.ville }}</p>
-        <mat-chip  *ngIf="item.alternance == 'true'" selected="true"  class="chip">Alternance</mat-chip>
+        <p class="slign">{{ item.Ville }}</p>
+        <mat-chip  *ngIf="item.Alternance == 'true'" selected="true"  class="chip">Alternance</mat-chip>
       </div>
   </div>
 </div>

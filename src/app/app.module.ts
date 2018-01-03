@@ -98,11 +98,6 @@ export class DemoMaterialModule {}
   ],
   providers: [],
   bootstrap: [
-    AppComponent,
-    DashboardComponent,
-    AboutComponent,
-    ProjetComponent,
-    DiplomeComponent,
-    CompetenceComponent] // Composants
+    AppComponent] // Composants
 })
 export class AppModule { }
