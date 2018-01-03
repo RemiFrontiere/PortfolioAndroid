@@ -86,15 +86,18 @@
         }
       }
        .contentCardProj{
-          padding: 24px;
           display:flex;
+          height: 600px;
           justify-content: center;
           align-items: center;
 
           .iconNext{
             width: 5%;
             height: 100%;
-
+            background-color: #1976d2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
 
 

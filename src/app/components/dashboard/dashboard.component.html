@@ -60,9 +60,12 @@
         </mat-toolbar-row> -->
       </mat-toolbar>
       <div class="contentCardProj">
+        <div class="iconNext">
+          <a class="bgBtn primaryColor" (click)="nextProject()"><i class="material-icons">keyboard_arrow_right</i></a>
+        </div>
         <projet-component [item]="selectedProject"></projet-component>
         <div class="iconNext">
-          <a mat-fab color="primary" class="bgBtn primaryColor" (click)="nextProject()"><i class="material-icons">keyboard_arrow_right</i></a>
+          <a class="bgBtn primaryColor" (click)="nextProject()"><i class="material-icons">keyboard_arrow_right</i></a>
         </div>
       </div>
     </mat-card>
