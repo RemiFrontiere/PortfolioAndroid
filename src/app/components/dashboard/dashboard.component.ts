@@ -63,4 +63,13 @@ export class DashboardComponent implements OnInit{
       this.selectedProject = this.myProjects[Number(this.selectedProject.Id) + 1];
     }
   }
+  public previousProject(){
+    if(Number(this.selectedProject.Id) == 0){
+      this.selectedProject = this.myProjects[Number(this.myProjects.length -1)];
+    }
+    else
+    {
+      this.selectedProject = this.myProjects[Number(this.selectedProject.Id) -1];
+    }
+  }
 }

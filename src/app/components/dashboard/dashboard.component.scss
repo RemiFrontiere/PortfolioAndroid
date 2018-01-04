@@ -25,6 +25,7 @@
 
   .card{
     padding: 5%;
+
     .divCard{
       padding: 0;
 
@@ -87,20 +88,18 @@
       }
        .contentCardProj{
           display:flex;
-          height: 600px;
           justify-content: center;
           align-items: center;
 
           .iconNext{
+            cursor: pointer;
             width: 5%;
-            height: 100%;
+            height: 450px;
             background-color: #1976d2;
             display: flex;
             justify-content: center;
             align-items: center;
           }
-
-
           projet-component{
             background-color: #2e2e2e;
             height: 100%;
@@ -111,6 +110,19 @@
         diplome-component:hover{
           cursor: pointer;
         }
+      }
+      .contentCardProj2{
+        padding: 24px;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .cardProject{
+          height: 500px;
+          width: 300px;
+          margin: 15px;
+          background-color: red;
+        }
+
       }
     }
   }

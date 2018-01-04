@@ -48,7 +48,27 @@
       </div>
     </mat-card>
   </div>
-  <div id="projet" class="card">
+  <!-- <div id="projet" class="card">
+    <mat-card class="divCard">
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
+          <p *ngIf="selectedLang=='fr'" class="title">Mes projets</p>
+          <p *ngIf="selectedLang=='uk'" class="title">My projects</p>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <div class="contentCardProj">
+        <div class="iconNext" (click)="previousProject()">
+          <a class="bgBtn primaryColor"><i class="material-icons">keyboard_arrow_left</i></a>
+        </div>
+        <projet-component [item]="selectedProject"></projet-component>
+        <div class="iconNext" (click)="nextProject()">
+          <a class="bgBtn primaryColor" ><i class="material-icons">keyboard_arrow_right</i></a>
+        </div>
+      </div>
+    </mat-card>
+  </div> -->
+  <div id="projet2" class="card">
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-toolbar-row>
@@ -59,13 +79,9 @@
         <!-- <mat-toolbar-row>
         </mat-toolbar-row> -->
       </mat-toolbar>
-      <div class="contentCardProj">
-        <div class="iconNext">
-          <a class="bgBtn primaryColor" (click)="nextProject()"><i class="material-icons">keyboard_arrow_right</i></a>
-        </div>
-        <projet-component [item]="selectedProject"></projet-component>
-        <div class="iconNext">
-          <a class="bgBtn primaryColor" (click)="nextProject()"><i class="material-icons">keyboard_arrow_right</i></a>
+      <div class="contentCardProj2">
+        <div class="cardProject" *ngFor="let project of myProjects">
+          <projet-component [item]="project"></projet-component>
         </div>
       </div>
     </mat-card>

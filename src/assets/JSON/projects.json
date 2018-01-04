@@ -20,8 +20,8 @@
           "textLink":"Material angular"
         },
         {
-          "type":"img",
-          "text":"portfolio01.png"
+          "type":"text",
+          "text":""
         },
         {
           "type":"text",
@@ -85,7 +85,7 @@
       "texts":[
         {
           "type":"text",
-          "text":"L’objectif de ce projet était de créer puis ensuite d’utiliser une DLL. Cette DLL écrite en C# devait utiliser les procédures stockés d’une base de données. La deuxième phase du projet était de créer une classe de test C# pour utiliser cette DLL. J’ai donc créer une solution Windows Forms."
+          "text":"L’objectif de ce projet était de créer puis ensuite d’utiliser une DLL. Cette DLL écrite en C# devait utiliser les procédures stockés d’une base de données. La deuxième phase du projet était de créer une classe de test C# pour utiliser cette DLL. J’ai donc créé une solution Windows Forms."
         },
         {
           "type":"text",
