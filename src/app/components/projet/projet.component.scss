@@ -17,7 +17,7 @@
   perspective: 1500px;
 
   .flipper{
-    transition: 2s;
+    transition: 1s;
     transform-style: preserve-3d;
     position: relative;
     height: 500px;
@@ -93,6 +93,13 @@
           }
           img{
             width: 250px;
+            margin-bottom: 5px;
+          }
+          ul{
+            text-align: left;
+            li{
+              font-size: 11px;
+            }
           }
         }
 

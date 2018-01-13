@@ -108,20 +108,112 @@
       "topimg":"Project/facturation.png",
       "texts":[
         {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "type":"env",
+          "text":"Projet BTS SIO 2ème année - C#"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"Ce logiciel permet de créer des factures à partir des données d’une Base de Données et d’un WebService (LesFactures, LesArticles, LesClients) pour ensuite permettre un Enregistrement ou un Affichage sur ou à partir de la Base de Données. Dans un second temps, nous devons présenter une maquette d’une solution Windows Phone en se basant sur la solution créé précédemment."
+        },
+        {
+          "type":"h3",
+          "text":"La partie SQL"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"On avait une Base de Données avec les tables ARTICLE et CLIENT. Il fallait faire évoluer cette base pour permettre la sauvegarde des différentes FACTURE des CLIENT. Nous avons donc créé la table FACTURE ainsi que la table DETAIL (detail de chaque facture : quantiteArticle, prix …)."
+        },
+        {
+          "type":"img",
+          "text":"facturation1.png"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"De plus nous avons ajouté des Triggers permettant d’empêcher des incohérences dans la base."
+        },
+        {
+          "type":"img",
+          "text":"facturation2.png"
+        },
+        {
+          "type":"h3",
+          "text":"La partie Windows Forms"
+        },
+        {
+          "type":"text",
+          "text":"Il fallait faire une application Windows Forms pour suivre le cahier des charges."
+        },
+        {
+          "type":"img",
+          "text":"facturation3.png"
+        },
+        {
+          "type":"img",
+          "text":"facturation4.png"
+        },
+        {
+          "type":"text",
+          "text":"On peut choisir de piocher les clients/articles dans la source de données souhaitée. "
+        },
+        {
+          "type":"img",
+          "text":"facturation5.png"
+        },
+        {
+          "type":"text",
+          "text":"Voici comment on récupère les données du WebService avec des requêtes LINQ to XML."
+        },
+        {
+          "type":"img",
+          "text":"facturation6.png"
+        },
+        {
+          "type":"text",
+          "text":"Le diagramme de classe :"
+        },
+        {
+          "type":"img",
+          "text":"facturation7.png"
+        },
+        {
+          "type":"text",
+          "text":"L’affichage des factures se déroule comme ci-dessous."
+        },
+        {
+          "type":"img",
+          "text":"facturation8.png"
+        },
+        {
+          "type":"img",
+          "text":"facturation9.png"
+        },
+        {
+          "type":"h3",
+          "text":"La partie Windows Phone"
+        },
+        {
+          "type":"text",
+          "text":"Nous devions faire une maquette mobile Windows Phone du Logiciel de Facturation précédemment développé. On avait la liberté de design et de développement. J’ai donc créé une application mobile permettant l’affichage des factures ainsi que leurs détails (le prix, la quantité …). J’ai aussi préparé la partie dans laquelle il est possible de créer une facture à partir de l’application mobile. Il n’y a pour le moment que le visuel."
+        },
+        {
+          "type":"img",
+          "text":"facturation10.png"
+        },
+        {
+          "type":"text",
+          "text":"Sachant qu’une application mobile ne pouvait pas accéder à ma Base de Données, j’ai choisi de faire évoluer mon WebService en lui permettant de taper dans la Base de Données."
+        },
+        {
+          "type":"text",
+          "text":"Voici l'affichage des factures et la création des factures."
+        },
+        {
+          "type":"img",
+          "text":"facturation12.png"
+        },
+        {
+          "type":"img",
+          "text":"facturation11.png"
         }
       ]
     },
@@ -156,20 +248,74 @@
       "topimg":"Project/stage2.png",
       "texts":[
         {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "type":"env",
+          "text":"Stage BTS SIO 2ème année - PHP / Cordova"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"Clope Out est une application mobile développé par Yansys ayant pour but d’aider à arrêter de fumer. L’application est déjà disponible sur le Play Store, nous avons dû faire de la maintenance évolutive."
+        },
+        {
+          "type":"link",
+          "text":"https://play.google.com/store/apps/details?id=com.yansys.clopeOut",
+          "textLink":"Clope Out"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"Il a fallu faire :"
+        },
+        {
+          "type":"li",
+          "textsli":[
+            {
+              "text":"page création « Challenge Collectif »"
+            },
+            {
+              "text":"page affichage challenges collectif"
+            },
+            {
+              "text":"page « Challenge Terminé »"
+            },
+            {
+              "text":"page statistiques"
+            }
+          ]
+        },
+        {
+          "type":"img",
+          "text":"stage21.png"
+        },
+        {
+          "type":"img",
+          "text":"stage22.png"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"Liaison avec la base de données en PHP pour récupérer les challenges."
+        },
+        {
+          "type":"img",
+          "text":"stage25.png"
+        },
+        {
+          "type":"text",
+          "text":"Mes débuts au Javascript."
+        },
+        {
+          "type":"img",
+          "text":"stage26.png"
+        },
+        {
+          "type":"img",
+          "text":"stage23.png"
+        },
+        {
+          "type":"text",
+          "text":"Sur la page des statistiques on peut voir les derniers inscrits, les plus belles progressions, les challenges collectifs disponibles."
+        },
+        {
+          "type":"img",
+          "text":"stage24.png"
         }
       ]
     }

@@ -6,7 +6,7 @@
       </div>
       <img *ngIf="item.TopImg" src="../../../assets/{{item.TopImg}}" alt="">
     </div>
-    <div class="backCard">
+    <div class="backCard" *ngIf="isFlipped">
       <mat-toolbar class="toolbar">
         <p class="title">{{ item.Name }}</p>
       </mat-toolbar>
@@ -18,6 +18,9 @@
             <a mat-raised-button color="primary" target="_blank" class="primaryColor" *ngIf="i.type == 'link'" href="{{ i.text }}">{{ i.textLink }}</a>
             <img *ngIf="i.type == 'img'" src="../../../assets/Project/{{i.text}}" alt="">
             <h3 *ngIf="i.type == 'h3'">{{ i.text }}</h3>
+            <ul *ngIf="i.type == 'li'">
+              <li *ngFor="let litxt of i.textsli">{{ litxt.text }}</li>
+            </ul>
           </div>
         </div>
         <div class="bottom">
