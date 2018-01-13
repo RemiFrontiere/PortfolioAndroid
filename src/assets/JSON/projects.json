@@ -8,7 +8,7 @@
       "texts":[
         {
           "type":"text",
-          "text":"J' ai développé mon portfolio à l' aide d' Angular 5 car j' avais besoin et envie d' apprendre ce framework. De plus, le Typescript qui est disponible depuis Angular 2 me convient plus que le Javascript sachant que j' ai essentiellement développé en C# durant mon BTS SIO."
+          "text":"J' ai développé mon portfolio à l' aide d' Angular 5. Le Typescript qui est disponible depuis Angular 2 me convient plus que le Javascript sachant que j' ai essentiellement développé en C# durant mon BTS SIO."
         },
         {
           "type":"text",
@@ -30,74 +30,74 @@
       ]
     },
     {
-      "id": "1",
-      "name": "Logiciel Enregistrement Carte Grise",
-      "language":"C#",
-      "topimg":"",
-      "texts":[
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        },
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        },
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        },
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Allier Tests",
-      "language":"C#",
-      "topimg":"",
-      "texts":[
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        },
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        },
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        },
-        {
-          "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
-        }
-      ]
-    },
-    {
       "id": "3",
       "name": "DLL",
       "language":"C#",
       "topimg":"Project/dll.png",
       "texts":[
         {
-          "type":"text",
-          "text":"L’objectif de ce projet était de créer puis ensuite d’utiliser une DLL. Cette DLL écrite en C# devait utiliser les procédures stockés d’une base de données. La deuxième phase du projet était de créer une classe de test C# pour utiliser cette DLL. J’ai donc créé une solution Windows Forms."
+          "type":"env",
+          "text":"Projet BTS SIO 2ème année - C#"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"L’objectif de ce projet était de créer puis ensuite d’utiliser une DLL. Cette DLL écrite en C# devait utiliser les procédures stockés d’une base de données. La deuxième phase du projet était de créer une solution de test C# pour utiliser cette DLL. J’ai donc créé une solution Windows Forms."
+        },
+        {
+          "type":"h3",
+          "text":"La DLL"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"Je devais créer une DLL de A à Z qui permette d’utiliser différentes procédures stockés d’une Base de Données. Voici ci-dessous les procédures stockés de ma base de donnée : "
+        },
+        {
+          "type":"img",
+          "text":"dll1.png"
         },
         {
           "type":"text",
-          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+          "text":"Voici ci-dessous ma méthode me retournant tous les paramètres d’une procédure stockée, ces derniers sont ajouté dans des listes de IN, OUT ou INOUT. Les IN et INOUT seront demandé à l’utilisateur pour continuer l’exécution de cette procédure."
+        },
+        {
+          "type":"img",
+          "text":"dll3.png"
+        },
+        {
+          "type":"img",
+          "text":"dll2.png"
+        },
+        {
+          "type":"text",
+          "text":"Précédemment, dans la méthode ChercherParametre, les différents paramètres sont aussi ajouté à la collection « Choix« . Ils peuvent être « INOUT », « IN » ou « OUT ». En fonction de ces valeurs on créer des sqlParameter qu’on ajoute à la SqlCommand pour exécuter la réquête."
+        },
+        {
+          "type":"img",
+          "text":"dll4.png"
+        },
+        {
+          "type":"h3",
+          "text":"La classe de test"
+        },
+        {
+          "type":"text",
+          "text":"Pour cette classe test, j’ai préféré utiliser une interface Windows Forms pour avec un minimum de design par rapport à une solution console basique."
+        },
+        {
+          "type":"text",
+          "text":"J’ai tout d’abord écrit la partie Mode Automatique permettant dès le lancement de charger ma ComboBox Base de Données puis une fois une base choisi la ComboBox Procedures s’affiche instantanément. Ci-dessous on peut voir les différentes Procédures vu plus haut sur la base de données."
+        },
+        {
+          "type":"img",
+          "text":"dll5.png"
+        },
+        {
+          "type":"text",
+          "text":"Par surplus de temps, j’ai rajouté le Mode Manuel où l’utilisateur doit tout renseigner manuellement. Bien sûr il y a une vérification sur la saisie."
+        },
+        {
+          "type":"img",
+          "text":"dll6.png"
         }
       ]
     },
@@ -105,7 +105,7 @@
       "id": "4",
       "name": "Logiciel Facturation",
       "language":"C#",
-      "topimg":"",
+      "topimg":"Project/facturation.png",
       "texts":[
         {
           "type":"text",
@@ -129,7 +129,31 @@
       "id": "5",
       "name": "Application mobile KumQuat",
       "language":"Android Studio",
-      "topimg":"",
+      "topimg":"Project/kqt.png",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Stage deuxième année",
+      "language":"PHP/Cordova",
+      "topimg":"Project/stage2.png",
       "texts":[
         {
           "type":"text",

@@ -10,11 +10,12 @@ import { Project } from '../../project';
 })
 export class ProjetComponent {
   @Input() item: Project;
-
+  private isFlipped : boolean = false;
   constructor(){
   }
 
   ngOnChanges() {
   }
+
 
 }

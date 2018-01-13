@@ -1,34 +1,28 @@
-<!-- <div class="projet" *ngIf="item">
-  <mat-toolbar class="toolbar">
-    <p class="title">{{ item.Name }}</p>
-  </mat-toolbar>
-  <div class="content">
-    <div class="titleImg">
-      <img *ngIf="item.TopImg" src="../../../assets/{{item.TopImg}}" alt="">
-      <mat-chip selected="true" class="chip">{{ item.Language }}</mat-chip>
-    </div>
-    <div class="texts">
-      <div *ngFor="let i of item.Texts">
-        <p *ngIf="i.type == 'text'">{{ i.text }}</p>
-        <a mat-raised-button color="primary" target="_blank" class="primaryColor" *ngIf="i.type == 'link'" href="{{ i.text }}">{{ i.textLink }}</a>
-        <img *ngIf="i.type == 'img'" src="../../../assets/Project/{{i.text}}" alt="">
+<div class="projet" *ngIf="item" [ngClass]="{'flip':isFlipped === true}">
+  <div class="flipper">
+    <div class="frontCard" (click)="isFlipped = !isFlipped">
+      <div class="frontDesc">
+        <p class="frontDescText">{{ item.Name }}</p>
       </div>
-    </div>
-  </div>
-</div> -->
-<div class="projet" *ngIf="item">
-  <mat-toolbar class="toolbar">
-    <p class="title">{{ item.Name }}</p>
-  </mat-toolbar>
-  <div class="content">
-    <div class="titleImg">
       <img *ngIf="item.TopImg" src="../../../assets/{{item.TopImg}}" alt="">
     </div>
-    <div class="texts">
-      <div *ngFor="let i of item.Texts">
-        <p *ngIf="i.type == 'text'">{{ i.text }}</p>
-        <a mat-raised-button color="primary" target="_blank" class="primaryColor" *ngIf="i.type == 'link'" href="{{ i.text }}">{{ i.textLink }}</a>
-        <img *ngIf="i.type == 'img'" src="../../../assets/Project/{{i.text}}" alt="">
+    <div class="backCard">
+      <mat-toolbar class="toolbar">
+        <p class="title">{{ item.Name }}</p>
+      </mat-toolbar>
+      <div class="content">
+        <div class="texts">
+          <div *ngFor="let i of item.Texts">
+            <p *ngIf="i.type == 'env'" class="env">{{ i.text }}</p>
+            <p *ngIf="i.type == 'text'">{{ i.text }}</p>
+            <a mat-raised-button color="primary" target="_blank" class="primaryColor" *ngIf="i.type == 'link'" href="{{ i.text }}">{{ i.textLink }}</a>
+            <img *ngIf="i.type == 'img'" src="../../../assets/Project/{{i.text}}" alt="">
+            <h3 *ngIf="i.type == 'h3'">{{ i.text }}</h3>
+          </div>
+        </div>
+        <div class="bottom">
+          <button type="button" mat-raised-button (click)="isFlipped = !isFlipped"><mat-icon class="mat-icon material-icons icon" role="img">subdirectory_arrow_left</mat-icon></button>
+        </div>
       </div>
     </div>
   </div>

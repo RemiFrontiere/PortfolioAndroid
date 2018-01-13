@@ -7,8 +7,8 @@
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-        <p *ngIf="selectedLang=='fr'" class="title">A propos</p>
-        <p *ngIf="selectedLang=='uk'" class="title">About</p>
+        <h1 *ngIf="selectedLang=='fr'" class="title">A propos</h1>
+        <h1 *ngIf="selectedLang=='uk'" class="title">About</h1>
       </mat-toolbar>
       <div class="contentCard">
         <about-component></about-component>
@@ -19,12 +19,11 @@
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-        <p *ngIf="selectedLang=='fr'" class="title">Mes diplômes</p>
-        <p *ngIf="selectedLang=='uk'" class="title">My qualifications</p>
+        <h1 *ngIf="selectedLang=='fr'" class="title">Mes diplômes - Mon parcours</h1>
+        <h1 *ngIf="selectedLang=='uk'" class="title">My qualifications</h1>
       </mat-toolbar>
       <div class="contentCardDip">
-        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12RySWnuIVhEelFGNbQe9xDQGvzBYK0VA0eZ51Nr4Do8&font=Default&lang=en&initial_zoom=2' width='100%' height='600px' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>                     
-        <!-- <diplome-component *ngFor="let diplome of myDiplomes" [item]="diplome"></diplome-component> -->
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12RySWnuIVhEelFGNbQe9xDQGvzBYK0VA0eZ51Nr4Do8&font=Default&lang=fr&start_at_end=true&initial_zoom=0' width='100%' height='100%' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
       </div>
     </mat-card>
   </div>
@@ -33,8 +32,8 @@
       <mat-toolbar>
         <mat-toolbar-row>
           <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-          <p *ngIf="selectedLang=='fr'" class="title">Mes compétences</p>
-          <p *ngIf="selectedLang=='uk'" class="title">My skills</p>
+          <h1 *ngIf="selectedLang=='fr'" class="title">Mes compétences</h1>
+          <h1 *ngIf="selectedLang=='uk'" class="title">My skills</h1>
         </mat-toolbar-row>
         <mat-toolbar-row>
           <mat-chip-list>
@@ -49,36 +48,14 @@
       </div>
     </mat-card>
   </div>
-  <!-- <div id="projet" class="card">
-    <mat-card class="divCard">
-      <mat-toolbar>
-        <mat-toolbar-row>
-          <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-          <p *ngIf="selectedLang=='fr'" class="title">Mes projets</p>
-          <p *ngIf="selectedLang=='uk'" class="title">My projects</p>
-        </mat-toolbar-row>
-      </mat-toolbar>
-      <div class="contentCardProj">
-        <div class="iconNext" (click)="previousProject()">
-          <a class="bgBtn primaryColor"><i class="material-icons">keyboard_arrow_left</i></a>
-        </div>
-        <projet-component [item]="selectedProject"></projet-component>
-        <div class="iconNext" (click)="nextProject()">
-          <a class="bgBtn primaryColor" ><i class="material-icons">keyboard_arrow_right</i></a>
-        </div>
-      </div>
-    </mat-card>
-  </div> -->
   <div id="projet2" class="card">
     <mat-card class="divCard">
       <mat-toolbar>
         <mat-toolbar-row>
           <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
-          <p *ngIf="selectedLang=='fr'" class="title">Mes projets</p>
-          <p *ngIf="selectedLang=='uk'" class="title">My projects</p>
+          <h1 *ngIf="selectedLang=='fr'" class="title">Mes projets</h1>
+          <h1 *ngIf="selectedLang=='uk'" class="title">My projects</h1>
         </mat-toolbar-row>
-        <!-- <mat-toolbar-row>
-        </mat-toolbar-row> -->
       </mat-toolbar>
       <div class="contentCardProj2">
         <div class="cardProject" *ngFor="let project of myProjects">

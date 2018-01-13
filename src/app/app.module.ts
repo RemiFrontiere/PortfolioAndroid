@@ -5,7 +5,6 @@ import { NgModule} from '@angular/core';
 import { AppComponent } from './components/app/app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AboutComponent } from './components/about/about.component';
-import { DiplomeComponent } from './components/diplome/diplome.component';
 import { CompetenceComponent } from './components/competence/competence.component';
 import { ProjetComponent } from './components/projet/projet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -86,7 +85,6 @@ export class DemoMaterialModule {}
     AppComponent,
     DashboardComponent,
     AboutComponent,
-    DiplomeComponent,
     CompetenceComponent,
     ProjetComponent
   ],
