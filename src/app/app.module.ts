@@ -7,6 +7,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AboutComponent } from './components/about/about.component';
 import { CompetenceComponent } from './components/competence/competence.component';
 import { ProjetComponent } from './components/projet/projet.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
@@ -86,7 +87,8 @@ export class DemoMaterialModule {}
     DashboardComponent,
     AboutComponent,
     CompetenceComponent,
-    ProjetComponent
+    ProjetComponent,
+    DialogComponent
   ],
   imports: [ // Imports
     BrowserModule,
@@ -95,6 +97,7 @@ export class DemoMaterialModule {}
     HttpClientModule
   ],
   providers: [],
+  entryComponents: [DialogComponent],
   bootstrap: [
     AppComponent] // Composants
 })

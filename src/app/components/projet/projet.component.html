@@ -16,7 +16,7 @@
             <p *ngIf="i.type == 'env'" class="env">{{ i.text }}</p>
             <p *ngIf="i.type == 'text'">{{ i.text }}</p>
             <a mat-raised-button color="primary" target="_blank" class="primaryColor" *ngIf="i.type == 'link'" href="{{ i.text }}">{{ i.textLink }}</a>
-            <img *ngIf="i.type == 'img'" src="../../../assets/Project/{{i.text}}" alt="">
+            <img (click)="openDialog(i.text)" *ngIf="i.type == 'img'" src="../../../assets/Project/{{i.text}}" alt="">
             <h3 *ngIf="i.type == 'h3'">{{ i.text }}</h3>
             <ul *ngIf="i.type == 'li'">
               <li *ngFor="let litxt of i.textsli">{{ litxt.text }}</li>
