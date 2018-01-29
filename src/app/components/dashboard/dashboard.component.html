@@ -11,7 +11,7 @@
         <h1 *ngIf="selectedLang=='uk'" class="title">About</h1>
       </mat-toolbar>
       <div class="contentCard">
-        <about-component></about-component>
+        <about-component [lang]="selectedLang"></about-component>
       </div>
     </mat-card>
   </div>
@@ -20,10 +20,11 @@
       <mat-toolbar>
         <mat-icon class="mat-icon material-icons icon" role="img">info</mat-icon>
         <h1 *ngIf="selectedLang=='fr'" class="title">Mes diplômes - Mon parcours</h1>
-        <h1 *ngIf="selectedLang=='uk'" class="title">My qualifications</h1>
+        <h1 *ngIf="selectedLang=='uk'" class="title">My degrees - My background</h1>
       </mat-toolbar>
       <div class="contentCardDip">
-        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12RySWnuIVhEelFGNbQe9xDQGvzBYK0VA0eZ51Nr4Do8&font=Default&lang=fr&start_at_end=true&initial_zoom=0' width='100%' height='100%' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        <iframe *ngIf="selectedLang=='fr'" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=12RySWnuIVhEelFGNbQe9xDQGvzBYK0VA0eZ51Nr4Do8&font=Default&lang=fr&start_at_end=true&initial_zoom=0' width='100%' height='100%' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        <iframe *ngIf="selectedLang=='uk'" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1gE3cOjWj-llhA9WZwq9NJJkIOYMyZv90LvlwM5iO6OY&font=Default&lang=en&start_at_end=true&initial_zoom=0&start_at_slide=1' width='100%' height='100%' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
       </div>
     </mat-card>
   </div>
@@ -37,7 +38,8 @@
         </mat-toolbar-row>
         <mat-toolbar-row>
           <mat-chip-list>
-            <mat-chip (click)="selectedChip = 'Tout'" selected="true"  class="chip1">{{ chip1 }}</mat-chip>
+            <mat-chip *ngIf="selectedLang=='fr'" (click)="selectedChip = 'Tout'" selected="true"  class="chip1">Tout</mat-chip>
+            <mat-chip *ngIf="selectedLang=='uk'" (click)="selectedChip = 'Tout'" selected="true"  class="chip1">All</mat-chip>
             <mat-chip (click)="selectedChip = 'Web'" selected="true"  class="chip2">{{ chip2 }}</mat-chip>
             <mat-chip (click)="selectedChip = 'Mobile'" selected="true"  class="chip3">{{ chip3 }}</mat-chip>
           </mat-chip-list>

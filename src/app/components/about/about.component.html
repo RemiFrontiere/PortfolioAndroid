@@ -2,7 +2,7 @@
   <div class="divImg">
     <img class="smallImg" src="../../assets/pictureSmall.png" alt="">
   </div>
-  <div class="textAbout">
+  <div class="textAbout" *ngIf="lang=='fr'">
     <p>
       Je m’appelle Rémi FRONTIERE, 22 ans, et je suis actuellement en
       Licence Pro Développeur Multisupport en alternance sur la ville d’Annecy.
@@ -16,6 +16,22 @@
       que j'ai effectué à Vichy.
     </p>
     <p>J'ai également un Bac Professionnel Technicien Menuisier Agenceur.</p>
+    <!-- <p>Je suis dîplomé d'un BTS Service Informatique aux Organisations option Solutions Logicielles et Applications Métiers</p> -->
+  </div>
+  <div class="textAbout" *ngIf="lang=='uk'">
+    <p>
+      My name is Rémi FRONTIERE, 22, and I am currently in
+      License Pro Multisupport Developer alternating on the city of Annecy.
+      The company Daesign welcomes me during this year of alternation.
+    </p>
+    <p>
+      I graduated from a BTS
+      <span matTooltip="IT Service to Organizations" class="toolTip">SIO</span>
+      option
+      <span matTooltip="Solutions Logicielles et Applications Métiers" class="toolTip">SLAM</span>
+      which I performed at Vichy.
+    </p>
+    <p>I also have a Technician Joiner Agenceur Professional Degree.</p>
     <!-- <p>Je suis dîplomé d'un BTS Service Informatique aux Organisations option Solutions Logicielles et Applications Métiers</p> -->
   </div>
 </div>

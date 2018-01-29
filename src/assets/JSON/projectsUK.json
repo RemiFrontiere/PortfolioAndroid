@@ -1,0 +1,323 @@
+{
+    "projects":[
+    {
+      "id": "0",
+      "name": "adada Remi Frontiere",
+      "language":"Angular 5 - Typescript",
+      "topimg":"portfolio.png",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J' ai développé mon portfolio à l' aide d' Angular 5. Le Typescript qui est disponible depuis Angular 2 me convient plus que le Javascript sachant que j' ai essentiellement développé en C# durant mon BTS SIO."
+        },
+        {
+          "type":"text",
+          "text":"Je m' appuie sur les material angular de Google pour certains composants (Toolbar, Icon, Button ...)"
+        },
+        {
+          "type":"link",
+          "text":"https://material.angular.io/",
+          "textLink":"Material angular"
+        },
+        {
+          "type":"text",
+          "text":""
+        },
+        {
+          "type":"text",
+          "text":""
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "DLL",
+      "language":"C#",
+      "topimg":"Project/dll.png",
+      "texts":[
+        {
+          "type":"env",
+          "text":"Projet BTS SIO 2ème année - C#"
+        },
+        {
+          "type":"text",
+          "text":"L’objectif de ce projet était de créer puis ensuite d’utiliser une DLL. Cette DLL écrite en C# devait utiliser les procédures stockés d’une base de données. La deuxième phase du projet était de créer une solution de test C# pour utiliser cette DLL. J’ai donc créé une solution Windows Forms."
+        },
+        {
+          "type":"h3",
+          "text":"La DLL"
+        },
+        {
+          "type":"text",
+          "text":"Je devais créer une DLL de A à Z qui permette d’utiliser différentes procédures stockés d’une Base de Données. Voici ci-dessous les procédures stockés de ma base de donnée : "
+        },
+        {
+          "type":"img",
+          "text":"dll1.png"
+        },
+        {
+          "type":"text",
+          "text":"Voici ci-dessous ma méthode me retournant tous les paramètres d’une procédure stockée, ces derniers sont ajouté dans des listes de IN, OUT ou INOUT. Les IN et INOUT seront demandé à l’utilisateur pour continuer l’exécution de cette procédure."
+        },
+        {
+          "type":"img",
+          "text":"dll3.png"
+        },
+        {
+          "type":"img",
+          "text":"dll2.png"
+        },
+        {
+          "type":"text",
+          "text":"Précédemment, dans la méthode ChercherParametre, les différents paramètres sont aussi ajouté à la collection « Choix« . Ils peuvent être « INOUT », « IN » ou « OUT ». En fonction de ces valeurs on créer des sqlParameter qu’on ajoute à la SqlCommand pour exécuter la réquête."
+        },
+        {
+          "type":"img",
+          "text":"dll4.png"
+        },
+        {
+          "type":"h3",
+          "text":"La classe de test"
+        },
+        {
+          "type":"text",
+          "text":"Pour cette classe test, j’ai préféré utiliser une interface Windows Forms pour avec un minimum de design par rapport à une solution console basique."
+        },
+        {
+          "type":"text",
+          "text":"J’ai tout d’abord écrit la partie Mode Automatique permettant dès le lancement de charger ma ComboBox Base de Données puis une fois une base choisi la ComboBox Procedures s’affiche instantanément. Ci-dessous on peut voir les différentes Procédures vu plus haut sur la base de données."
+        },
+        {
+          "type":"img",
+          "text":"dll5.png"
+        },
+        {
+          "type":"text",
+          "text":"Par surplus de temps, j’ai rajouté le Mode Manuel où l’utilisateur doit tout renseigner manuellement. Bien sûr il y a une vérification sur la saisie."
+        },
+        {
+          "type":"img",
+          "text":"dll6.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Logiciel Facturation",
+      "language":"C#",
+      "topimg":"Project/facturation.png",
+      "texts":[
+        {
+          "type":"env",
+          "text":"Projet BTS SIO 2ème année - C#"
+        },
+        {
+          "type":"text",
+          "text":"Ce logiciel permet de créer des factures à partir des données d’une Base de Données et d’un WebService (LesFactures, LesArticles, LesClients) pour ensuite permettre un Enregistrement ou un Affichage sur ou à partir de la Base de Données. Dans un second temps, nous devons présenter une maquette d’une solution Windows Phone en se basant sur la solution créé précédemment."
+        },
+        {
+          "type":"h3",
+          "text":"La partie SQL"
+        },
+        {
+          "type":"text",
+          "text":"On avait une Base de Données avec les tables ARTICLE et CLIENT. Il fallait faire évoluer cette base pour permettre la sauvegarde des différentes FACTURE des CLIENT. Nous avons donc créé la table FACTURE ainsi que la table DETAIL (detail de chaque facture : quantiteArticle, prix …)."
+        },
+        {
+          "type":"img",
+          "text":"facturation1.png"
+        },
+        {
+          "type":"text",
+          "text":"De plus nous avons ajouté des Triggers permettant d’empêcher des incohérences dans la base."
+        },
+        {
+          "type":"img",
+          "text":"facturation2.png"
+        },
+        {
+          "type":"h3",
+          "text":"La partie Windows Forms"
+        },
+        {
+          "type":"text",
+          "text":"Il fallait faire une application Windows Forms pour suivre le cahier des charges."
+        },
+        {
+          "type":"img",
+          "text":"facturation3.png"
+        },
+        {
+          "type":"img",
+          "text":"facturation4.png"
+        },
+        {
+          "type":"text",
+          "text":"On peut choisir de piocher les clients/articles dans la source de données souhaitée. "
+        },
+        {
+          "type":"img",
+          "text":"facturation5.png"
+        },
+        {
+          "type":"text",
+          "text":"Voici comment on récupère les données du WebService avec des requêtes LINQ to XML."
+        },
+        {
+          "type":"img",
+          "text":"facturation6.png"
+        },
+        {
+          "type":"text",
+          "text":"Le diagramme de classe :"
+        },
+        {
+          "type":"img",
+          "text":"facturation7.png"
+        },
+        {
+          "type":"text",
+          "text":"L’affichage des factures se déroule comme ci-dessous."
+        },
+        {
+          "type":"img",
+          "text":"facturation8.png"
+        },
+        {
+          "type":"img",
+          "text":"facturation9.png"
+        },
+        {
+          "type":"h3",
+          "text":"La partie Windows Phone"
+        },
+        {
+          "type":"text",
+          "text":"Nous devions faire une maquette mobile Windows Phone du Logiciel de Facturation précédemment développé. On avait la liberté de design et de développement. J’ai donc créé une application mobile permettant l’affichage des factures ainsi que leurs détails (le prix, la quantité …). J’ai aussi préparé la partie dans laquelle il est possible de créer une facture à partir de l’application mobile. Il n’y a pour le moment que le visuel."
+        },
+        {
+          "type":"img",
+          "text":"facturation10.png"
+        },
+        {
+          "type":"text",
+          "text":"Sachant qu’une application mobile ne pouvait pas accéder à ma Base de Données, j’ai choisi de faire évoluer mon WebService en lui permettant de taper dans la Base de Données."
+        },
+        {
+          "type":"text",
+          "text":"Voici l'affichage des factures et la création des factures."
+        },
+        {
+          "type":"img",
+          "text":"facturation12.png"
+        },
+        {
+          "type":"img",
+          "text":"facturation11.png"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Application mobile KumQuat",
+      "language":"Android Studio",
+      "topimg":"Project/kqt.png",
+      "texts":[
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        },
+        {
+          "type":"text",
+          "text":"J'ai développé mon portfolio à l'aide d'Angular 5 car j'avais besoin et envie d'apprendre ce framework."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Stage deuxième année",
+      "language":"PHP/Cordova",
+      "topimg":"Project/stage2.png",
+      "texts":[
+        {
+          "type":"env",
+          "text":"Stage BTS SIO 2ème année - PHP / Cordova"
+        },
+        {
+          "type":"text",
+          "text":"Clope Out est une application mobile développé par Yansys ayant pour but d’aider à arrêter de fumer. L’application est déjà disponible sur le Play Store, nous avons dû faire de la maintenance évolutive."
+        },
+        {
+          "type":"link",
+          "text":"https://play.google.com/store/apps/details?id=com.yansys.clopeOut",
+          "textLink":"Clope Out"
+        },
+        {
+          "type":"text",
+          "text":"Il a fallu faire :"
+        },
+        {
+          "type":"li",
+          "textsli":[
+            {
+              "text":"page création « Challenge Collectif »"
+            },
+            {
+              "text":"page affichage challenges collectif"
+            },
+            {
+              "text":"page « Challenge Terminé »"
+            },
+            {
+              "text":"page statistiques"
+            }
+          ]
+        },
+        {
+          "type":"img",
+          "text":"stage21.png"
+        },
+        {
+          "type":"img",
+          "text":"stage22.png"
+        },
+        {
+          "type":"text",
+          "text":"Liaison avec la base de données en PHP pour récupérer les challenges."
+        },
+        {
+          "type":"img",
+          "text":"stage25.png"
+        },
+        {
+          "type":"text",
+          "text":"Mes débuts au Javascript."
+        },
+        {
+          "type":"img",
+          "text":"stage26.png"
+        },
+        {
+          "type":"img",
+          "text":"stage23.png"
+        },
+        {
+          "type":"text",
+          "text":"Sur la page des statistiques on peut voir les derniers inscrits, les plus belles progressions, les challenges collectifs disponibles."
+        },
+        {
+          "type":"img",
+          "text":"stage24.png"
+        }
+      ]
+    }
+  ]
+}
